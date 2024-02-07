@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="586.0" prefWidth="821.0" styleClass="panel1" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ResultadosController">
+   <children>
+     <MenuBar layoutY="-2.0" prefHeight="26.0" prefWidth="821.0" styleClass="MenuBar" stylesheets="@application.css" />
+      <Button layoutX="746.0" layoutY="35.0" mnemonicParsing="false" onAction="#atrasOnClick" style="-fx-background-color: #ddd952;" text="ATRÁS" />
+      <Pane layoutX="72.0" layoutY="88.0" prefHeight="221.0" prefWidth="266.0" style="-fx-background-color: trasnparete; -fx-border-color: #01A9DB; -fx-border-radius: 25px;">
+         <children>
+             <FontAwesomeIconView fill="#13b029" glyphName="BUG" layoutX="100.0" layoutY="65.0" size="60" />
+           <Label fx:id="labeBugs" alignment="CENTER" layoutX="62.0" layoutY="76.0" prefHeight="63.0" prefWidth="56.0" style="-fx-font-weight: bold; -fx-font-size: 50; -fx-text-alignment: center;" styleClass="tamano" stylesheets="@application.css" text="1" textFill="#01a9db">
+              
+            </Label>
+            <Button layoutX="101.0" layoutY="183.0" mnemonicParsing="false" styleClass="botonAzul" stylesheets="@application.css" text="Ver Bugs" textFill="WHITE" />
+            <Text fill="#01a9db" layoutX="121.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Bugs">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="54.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="456.0" layoutY="326.0" prefHeight="221.0" prefWidth="266.0" style="-fx-background-color: trasnparete; -fx-border-color: #01A9DB; -fx-border-radius: 25px;">
+         <children>
+              <Text fill="#01a9db" layoutX="23.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Duplicidad">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="45.0" />
+               </font>
+            </Text>
+            <Label fx:id="labelDuplicidad" alignment="CENTER" layoutX="71.0" layoutY="111.0" prefHeight="63.0" prefWidth="124.0" style="-fx-font-weight: bold; -fx-font-size: 54;" styleClass="tamano" stylesheets="@application.css" text="1" textFill="#01a9db">
+               
+            </Label>
+            <Label layoutX="158.0" layoutY="87.0" prefHeight="70.0" prefWidth="34.0" style="-fx-font-weight: bold;" textFill="#01a9db">
+              
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="72.0" layoutY="326.0" prefHeight="221.0" prefWidth="266.0" style="-fx-background-color: trasnparete; -fx-border-color: #01A9DB; -fx-border-radius: 25px;">
+         <children>
+              <Text fill="#01a9db" layoutX="9.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Vulnerabilidades">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Text>
+            <Label fx:id="labelVulnerabilidades" alignment="CENTER" layoutX="95.0" layoutY="110.0" prefHeight="61.0" prefWidth="72.0" style="-fx-font-weight: bold; -fx-font-size: 54; -fx-text-alignment: center;" styleClass="tamano" stylesheets="@application.css" text="1" textFill="#01a9db">
+             
+            </Label>
+            <Button layoutX="70.0" layoutY="181.0" mnemonicParsing="false" styleClass="botonAzul" stylesheets="@application.css" text="Ver Vulnerabilidades" textFill="WHITE" />
+              <FontAwesomeIconView fill="#efdc06" glyphName="EXCLAMATION" layoutX="120.0" layoutY="65.0" size="60" />
+          </children>
+      </Pane>
+      <Pane layoutX="456.0" layoutY="88.0" prefHeight="221.0" prefWidth="266.0" style="-fx-background-color: trasnparete; -fx-border-color: #01A9DB; -fx-border-radius: 25px;">
+         <children>
+            <FontAwesomeIconView fill="#01a9db" glyphName="SHIELD" layoutX="111.0" layoutY="65.0" size="60" wrappingWidth="43.399993896484375" />
+            <Label fx:id="labelCodeSmells" alignment="CENTER" layoutX="30.0" layoutY="75.0" prefHeight="53.0" prefWidth="52.0" style="-fx-font-weight: bold; -fx-font-size: 54; -fx-text-alignment: center;" styleClass="tamano" stylesheets="@application.css" text="1" textFill="#01a9db">
+              
+            </Label>
+            <Button layoutX="81.0" layoutY="183.0" mnemonicParsing="false" onAction="#resultadosCodeSmells" styleClass="botonAzul" stylesheets="@application.css" text="Ver Code Smells" textFill="WHITE" />
+            <Text fill="#01a9db" layoutX="82.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="CodeSmells">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text layoutX="290.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultados" wrappingWidth="240.79995727539062">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+         </font></Text>
+   </children>
+</AnchorPane>

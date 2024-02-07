@@ -1,0 +1,40 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.MenuBar {
+    -fx-background-color: #01A9DB;
+    -fx-color: #ffffff;
+   
+}
+.botonCerrarSesion {
+    -fx-background-color: rgba(255, 0, 0, 0.5);
+    -fx-font-weight: bold;
+}
+.botonAzul {
+    -fx-background-color: #01A9DB;
+}
+.botonVolver{
+	-fx-background-color:  #ddd952;
+}
+.fieldAzul {
+    -fx-background-color:  transparent;
+    -fx-border-color: #01A9DB;  
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.tamano {
+     -fx-font-size: 48;
+}
+
+@font-face {
+    src: url('/fonts/Berlin Sans FB Demi Bold.ttf');
+}
+
+.text {
+    -fx-text-fill: #01A9DB;
+    -fx-font-family: "Berlin Sans FB Demi";
+}
+
+
+.panel1{
+	 -fx-background-color: #F2F3F4;
+}

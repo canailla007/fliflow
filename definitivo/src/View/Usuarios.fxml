@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane minHeight="605.0" prefWidth="966.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.UsuariosController">
+   <children>
+       <TableView fx:id="tablaUsuarios" layoutX="28.0" layoutY="245.0" prefHeight="283.0" prefWidth="921.0">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="59.999996185302734" text="ID" />
+          <TableColumn fx:id="colUsuario" prefWidth="558.4000091552734" text="Usuario" />
+            <TableColumn fx:id="colAdmin" prefWidth="103.20001220703125" text="Admin" />
+          <TableColumn fx:id="colModificar" minWidth="0.0" prefWidth="100.0" text="Modificar" />
+            <TableColumn fx:id="colEliminar" prefWidth="100.7999267578125" text="Eliminar" />
+        </columns>
+      </TableView>
+      <Label layoutX="411.0" layoutY="23.0" prefHeight="25.0" prefWidth="157.0" text="Gestión de usuarios">
+      </Label>
+      <Button layoutX="34.0" layoutY="23.0" mnemonicParsing="false" onAction="#atrasOnClick" style="-fx-background-color: #ddd952;" text="ATRÁS" />
+      <Pane layoutX="25.0" layoutY="79.0" prefHeight="98.0" prefWidth="928.0" style="-fx-background-color: transparent; -fx-border-color: #01A9DB;">
+         <children>
+            <Button layoutX="738.0" layoutY="56.0" mnemonicParsing="false" onAction="#crearUsuarioOnClick" prefHeight="28.0" prefWidth="157.0" styleClass="botonAzul" stylesheets="@application.css" text="Crear nuevo usuario" textFill="#f8f7f7" />
+            <TextField fx:id="fieldUsuario" layoutX="22.0" layoutY="56.0" prefHeight="27.0" prefWidth="189.0" promptText="Nombre del usuario" styleClass="fieldAzul" stylesheets="@application.css" />
+            <TextField fx:id="fieldContraseña" layoutX="268.0" layoutY="56.0" prefHeight="27.0" prefWidth="179.0" promptText="Contraseña" styleClass="fieldAzul" stylesheets="@application.css" />
+            <Text layoutX="369.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dar de alta a un nuevo usuario">
+            </Text>
+            <CheckBox fx:id="adminCheck" layoutX="507.0" layoutY="49.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="168.0" text="Permisos de administrador" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

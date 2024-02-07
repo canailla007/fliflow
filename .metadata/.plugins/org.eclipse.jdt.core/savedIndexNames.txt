@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+C:\Users\Nacho\javafx-prueba\.metadata\.plugins\org.eclipse.jdt.core
+687334728.index
+3055075433.index
+1865797976.index
+2124292143.index
